@@ -10,14 +10,34 @@ $('.soft-menu__list').onclick = (e) => {
     e.stopPropagation()
 }
 
-$$('.soft-menu__item').forEach((item) => {
-    // item.childNodes[1].PreventDefault;
-    item.onclick = () => {
-        
-        // toggleNavMobile()
-    };
-});
 
-$('.header-mobile-icon-search').onclick = () => {
-    $('.header-mobile-search').classList.toggle('active')
-}
+// $('.header-mobile-icon-search')?.onclick = () => {
+//     $('.header-mobile-search')?.classList?.toggle('active')
+// }
+
+
+// lskhjdaslkjdlaks
+const minminmin = setInterval(() => {
+    $$("#service .carousel-item").forEach((item) => {
+        let url = ""
+        if(item.classList[1]==="active"){
+            // console.log(item.querySelector(".service-item-title").innerText);
+            const title = item.querySelector(".service-item-title").innerText
+
+            if(title ==="DU LỊCH"){
+                url = "./assets/images/service-bg-dulich.png";
+            }
+            if(title ==="THỜI TRANG, LÀM ĐẸP"){
+                url = "./assets/images/thoi trang.png";
+            }
+            if(title ==="TRANG SỨC, ĐÁ QUÝ"){
+                url = "./assets/images/trang suc.png";
+            }
+            if(title ==="BẤT ĐỘNG SẢN"){
+                url = "./assets/images/bat dong san.png";
+            }
+            
+            $('#service').style.backgroundImage = 'url("' + url + '")';
+        }
+    })
+},500)
