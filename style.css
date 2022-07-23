@@ -92,6 +92,7 @@ a:hover{
 .second-title{
     color: #DF9E59;
     font-size: 26px;
+    font-weight: 700;
     text-transform: uppercase;
     font-family: 'Cormorant SC', serif;
 }
@@ -136,29 +137,20 @@ a:hover{
     display: flex;
     align-items: center;
     transition: all 0.3s linear;
+    background-image: url(./assets/images/login.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .header-login:hover{
     cursor: pointer;
-    background: #12ccff;
-}
-
-.header-login-icon{
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: 2px solid #0099FF;
-    margin-right: 12px;
-}
-
-.header-login-icon i{
-    color: #0099FF;
 }
 
 .header-login-title{
     flex: 1;
     font-weight: 600;
-    color: #0099FF;
+    color: #fff;
 }
 
 /* intro */
@@ -179,7 +171,8 @@ a:hover{
 
 .intro-text{
     color: #001577;
-    font-size: 30px;
+    font-size: 40px;
+    font-weight: 700;
     font-family: 'Cormorant SC', serif;
 }
 
@@ -321,7 +314,9 @@ a:hover{
 }
 
 .vision-desc{
-    font-size: 18px;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: 'Cormorant SC', serif;
 }
 
 /* VALUE */

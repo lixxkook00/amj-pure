@@ -111,7 +111,7 @@
     }
 
     .us .second-title{
-        font-size: 27px;
+        font-size: 21px;
     }
 
     .us .paragraph{
@@ -145,6 +145,11 @@
     .service-title{
         font-size: 26px;
         margin-bottom: 30px;
+    }
+
+    .vision-desc{
+        font-size: 16px;
+        padding: 0 20px;
     }
 }
 
