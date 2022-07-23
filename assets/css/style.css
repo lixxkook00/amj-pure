@@ -40,7 +40,7 @@ a:hover{
 }
 
 .bg-intro{
-    background-image: url(./assets/images/bg-intro.png);
+    background-image: url(../images/bg-intro.png);
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 100% 100%;
@@ -184,7 +184,7 @@ a:hover{
 
 .about{
     margin: 30px 0;
-    background-image: url(./assets/images/wave.png);
+    background-image: url(../images/wave.png);
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 80% 45%;
@@ -199,7 +199,7 @@ a:hover{
 }
 
 .about-2{
-    background-image: url(./assets/images/about-2.png);
+    background-image: url(../images/about-2.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
