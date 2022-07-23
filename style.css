@@ -1,5 +1,5 @@
+
 html,body{
-    /* font-family: 'Cormorant SC', serif; */
     box-sizing: border-box;
     scroll-behavior: smooth;
     background-color: #F2FCFF;
@@ -68,6 +68,7 @@ a:hover{
     align-items: center;
     font-weight: 700;
     margin-bottom: 0px;
+    font-family: 'Cormorant SC', serif;
 }
 
 .primary-title-icon{
@@ -85,12 +86,14 @@ a:hover{
     font-size: 40px;
     text-transform: none;
     margin: 0 12px;
+    font-family: 'Cormorant SC', serif;
 }
 
 .second-title{
     color: #DF9E59;
     font-size: 26px;
     text-transform: uppercase;
+    font-family: 'Cormorant SC', serif;
 }
 
 /* intro */
@@ -110,7 +113,8 @@ a:hover{
 
 .header-nav-item{
     color: #fff !important;
-    font-weight: 500;
+    font-weight: 700;
+    font-family: 'Cormorant SC', serif;
 }
 
 .header-nav-item:hover{
@@ -176,6 +180,7 @@ a:hover{
 .intro-text{
     color: #001577;
     font-size: 30px;
+    font-family: 'Cormorant SC', serif;
 }
 
 /* about */
@@ -185,7 +190,7 @@ a:hover{
 } */
 
 .about{
-    margin: 50px 0;
+    margin: 30px 0;
     background-image: url(./assets/images/wave.png);
     background-repeat: no-repeat;
     background-position: left top;
@@ -238,7 +243,7 @@ a:hover{
 }
 
 .us-img{
-    width: 70%;
+    width: 80%;
 }
 
 /* machine */
@@ -260,6 +265,8 @@ a:hover{
 .service-title{
     font-size: 70px;
     color: #fff;
+    font-family: 'Cormorant SC', serif;
+    font-weight: 700;
 }
 
 .service-slider{
@@ -288,6 +295,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 0 20px;
 }
 
 .service-item-title{
@@ -296,6 +304,7 @@ a:hover{
     font-size: 22px;
     text-transform: uppercase;
     margin-bottom: 20px;
+    font-family: 'Cormorant SC', serif;
 }
 
 
@@ -326,6 +335,7 @@ a:hover{
     font-size: 40px;
     margin-bottom: 30px;
     font-weight: 500;
+    font-family: 'Cormorant SC', serif;
 }
 
 .value-item{
@@ -344,6 +354,7 @@ a:hover{
 .value-item-title{
     font-weight: 500;
     letter-spacing: 1px;
+    font-family: 'Cormorant SC', serif;
 }
 
 .value-item-desc{
@@ -370,10 +381,12 @@ a:hover{
 .footer-title{
     font-size: 22px;
     font-weight: 600;
+    font-family: 'Cormorant SC', serif;
 }
 
 .footer-desc{
     font-size: 20px;
+    font-family: 'Cormorant SC', serif;
 }
 
 .footer-social{
@@ -542,4 +555,38 @@ a:hover{
 .header-mobile-right img{
     height: 100%;
     width: auto;
+}
+
+#about{
+    padding-top: 30px;
+}
+
+.carousel-control-prev i,
+.carousel-control-next i{
+    color: #001577;
+}
+
+.service .carousel-control-prev {
+    left: -5%;
+}
+
+.service .carousel-control-next {
+    right: -5%;
+}
+
+.wrapper-icon{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #9BD8E8;
+    border-radius: 50%;
+}
+
+/* mission */
+
+.mission{
+    padding: 30px 0;
+    background-color: #F2FCFF;
 }
