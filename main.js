@@ -24,20 +24,20 @@ const minminmin = setInterval(() => {
             // console.log(item.querySelector(".service-item-title").innerText);
             const title = item.querySelector(".service-item-title").innerText
 
-            if(title ==="DU LỊCH"){
+            if(title ==="TRAVEL"){
                 url = "./assets/images/service-bg-dulich.png";
             }
-            if(title ==="THỜI TRANG, LÀM ĐẸP"){
+            if(title ==="FASHION AND BEAUTY"){
                 url = "./assets/images/thoi trang.png";
             }
-            if(title ==="TRANG SỨC, ĐÁ QUÝ"){
+            if(title ==="JEWELRY AND GEMS"){
                 url = "./assets/images/trang suc.png";
             }
-            if(title ==="BẤT ĐỘNG SẢN"){
+            if(title ==="REAL ESTATE"){
                 url = "./assets/images/bat dong san.png";
             }
             
             $('#service').style.backgroundImage = 'url("' + url + '")';
         }
     })
-},500)
+},100)
