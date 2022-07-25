@@ -24,16 +24,16 @@ const minminmin = setInterval(() => {
             // console.log(item.querySelector(".service-item-title").innerText);
             const title = item.querySelector(".service-item-title").innerText
 
-            if(title ==="TRAVEL"){
+            if(title ==="TRAVEL" || title ==="DU LỊCH"){
                 url = "./assets/images/service-bg-dulich.png";
             }
-            if(title ==="FASHION AND BEAUTY"){
+            if(title ==="FASHION AND BEAUTY" || title ==="THỜI TRANG, LÀM ĐẸP"){
                 url = "./assets/images/thoi trang.png";
             }
-            if(title ==="JEWELRY AND GEMS"){
+            if(title ==="JEWELRY AND GEMS" || title ==="TRANG SỨC, ĐÁ QUÝ"){
                 url = "./assets/images/trang suc.png";
             }
-            if(title ==="REAL ESTATE"){
+            if(title ==="REAL ESTATE" || title ==="BẤT ĐỘNG SẢN"){
                 url = "./assets/images/bat dong san.png";
             }
             
