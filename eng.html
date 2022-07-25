@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.png">
+    <title>AMJ</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- BT JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+
+    <!-- meta -->
+    <meta name="title" content="AMJ ">
+    <meta name="author" content="AMJ">
+    <meta name="description" content="AMJ CÙNG BẠN LÀM CHỦ TƯƠNG LAI">
+
+    <meta property="og:image" content="./assets/images/logo.png">
+    <meta property="og:title" content="AMJ">
+    <meta property="og:description" content="AMJ CÙNG BẠN LÀM CHỦ TƯƠNG LAI">
+</head>
+
+<body>
+
+    <div class="bg-intro">
+        <header class="header hidden-m-t">
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+                        <div class="header-logo">
+                            <img src="./assets/images/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="header-nav">
+                            <a href="#intro" class="header-nav-item">
+                                OPEN LETTER
+                            </a>
+                            <a href="#about" class="header-nav-item">
+                                ABOUT US
+                            </a>
+                            <a href="#machine" class="header-nav-item">
+                                WHY CHOOSE US
+                            </a>
+                            <a href="#service" class="header-nav-item">
+                                FIELD OPERATIONS
+                            </a>
+                            <a href="#vision" class="header-nav-item">
+                                VISION
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 centering">
+                        <div class="header-login">
+                            <div class="header-login-title centering">
+                                LOGIN
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="intro centering">
+            <div class="intro-img">
+                <img src="./assets/images/intro-text.png" alt="">
+            </div>
+            <div class="intro-text">
+                beside you to control the future
+            </div>
+        </div>
+    </div>
+
+    <div id="intro" class="container">
+        <div class="paragraph mt-20">
+            The years 2020 and 2021 are two tragic years of the 21st century. The COVID-19 pandemic has been sweeping
+            through most
+            of the countries in the world, leaving behind it how much damage it has done to people and assets. The
+            global economy in
+            the past two years has been severely affected by the pandemic, especially in high-value products such as
+            gems, real
+            estate, and completely paralyzed industries such as tourism.
+        </div>
+
+        <div class="paragraph">
+            Presently, the pandemic has been somewhat controlled thanks to the great efforts of mankind. The businesses
+            and services
+            that are most affected by the epidemic will be the ones that recover the most strongly due to consumer
+            demand. It was
+            suppressed for a long time. In addition, Vietnam is a country with many favorable natural conditions and the
+            fastest
+            growing economy in the region, so we believe this is a rare opportunity to invest strongly to capture the
+            market.
+        </div>
+    </div>
+
+    <!-- HEADER MOBILE -->
+    <div class="header-mobile hide-on-pc">
+        <div class="header-mobile-right">
+            <img src="./assets/images/logo.png" alt="">
+        </div>
+        <div class="header-mobile-left">
+            <div class="header-mobile-icon centering" onclick="toggleNavMobile()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV MOBILE -->
+    <div class="soft-menu" onclick="toggleNavMobile()">
+        <ul class="soft-menu__list" onclick="{(e) => e.stopPropagation();}">
+            <li class="soft-menu__item dark-modes">
+                <a href="#intro" data-address="intro" class="header-mobile-logo">
+                    OPEN LETTER
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item--active">
+                <a href="#intro" data-address="intro" class="header-mobile-logo">
+                    OPEN LETTER
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item--active">
+                <a href="#about" data-address="about">
+                    ABOUT US
+                </a>
+            </li>
+            <li class="soft-menu__item hehe">
+                <a href="#machine" data-address="machine">
+                    WHY CHOOSE US
+                </a>
+
+                <!-- sub -->
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a href="#service" data-address="service">
+                    FIELD OPERATIONS
+                </a>
+            </li>
+            <li class="soft-menu__item soft-menu__item-sub">
+                <a href="#vision" data-address="vision">
+                    VISION
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- about -->
+    <div class="about">
+        <div class="primary-title centering">
+            <div class="primary-title-icon">
+                <img src="./assets/images/arrow-left.png" alt="">
+            </div>
+            <div class="primary-title-text">
+                AMJ
+            </div>
+            <div class="primary-title-icon">
+                <img src="./assets/images/arrow-right.png" alt="">
+            </div>
+        </div>
+        <div class="second-title centering">
+            beside you to control the future
+        </div>
+
+        <div id="about" class="container">
+            <div class="row">
+                <div class="col-md-6 col-12 centering">
+                    <div class="about-content">
+                        <div class="second-title">
+                            About us
+                        </div>
+                        <div class="paragraph block">
+                            Starting from the field of tourism-real estate, AMJ has been constantly researching,
+                            expanding, and exploiting different
+                            financial solutions to bring sustainable development and prosperous income to investors. AMJ
+                            Financial Group was
+                            officially established with the development orientation to become a leading financial group
+                            in the international market.
+
+                        </div>
+                        <div class="paragraph block">
+                            We are constantly growing and developing with the total development of our member units and
+                            affiliated companies in many
+                            business fields, such as real estate trading, jewelry trading, gems, investment in chains,
+                            restaurants, hotels, and
+                            luxury resorts.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="about-slider">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="./assets/images/about-img.png" alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="./assets/images/about-img-2.png" alt="Second slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-2-mobile hide-on-pc hidden-tl">
+        <div class="container">
+            <div class="col-12">
+                <div class="paragraph block ">
+                    AMJ promises to be a place where investors and customers put their full trust, aiming to increase
+                    finance for customers
+                    and develop a strong investor community. On that foundation, AMJ will continue to develop
+                    comprehensively in the
+                    Asia-Pacific region and strive to achieve its goal of becoming one of the most trusted financial
+                    services providers.
+                </div>
+            </div>
+        </div>
+        <img src="./assets/images/about-2.png" alt="">
+    </div>
+
+    <div class="about-2 hidden-m">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 col-12">
+                    <div class="about-img">
+                        <!-- <img src="./assets/images/building-about.png" alt=""> -->
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 centering">
+                    <div class="paragraph block ">
+                        AMJ promises to be a place where investors and customers put their full trust, aiming to
+                        increase finance for customers
+                        and develop a strong investor community. On that foundation, AMJ will continue to develop
+                        comprehensively in the
+                        Asia-Pacific region and strive to achieve its goal of becoming one of the most trusted financial
+                        services providers.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- why choose us -->
+    <div class="us">
+        <div class="us-content">
+            <div class="second-title">
+                Why choose us
+            </div>
+            <div class="paragraph block">
+                AMJ always leads to the stability and sustainable development of financial resources for each customer.
+            </div>
+        </div>
+        <div class="us-img">
+            <img src="./assets/images/why-2.png" alt="">
+        </div>
+    </div>
+
+    <!-- machine -->
+    <div id="machine" class="machine">
+        <div class="container">
+            <div class="primary-title centering mb-40">
+                <div class="primary-title-icon">
+                    <img src="./assets/images/arrow-left.png" alt="">
+                </div>
+                <div class="primary-title-text">
+                    Operating model
+                </div>
+                <div class="primary-title-icon">
+                    <img src="./assets/images/arrow-right.png" alt="">
+                </div>
+            </div>
+
+            <div class="machine-img">
+                <img class="hidden-m" src="./assets/images/machine-2.png" alt="">
+                <img class="hide-on-pc hidden-tl" src="./assets/images/machine-mobile-2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- service -->
+    <div id="service" class="service centering">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <div class="service-title">
+                        Field
+                        <br>operations
+                    </div>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="service-slider">
+                        <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="service-item">
+                                        <div class="service-item-title">
+                                            Travel
+                                        </div>
+                                        <div class="service-item-content">
+                                            After being directly affected by the pandemic, the "smokeless industry" of
+                                            tourism is recovering stronger than ever.
+                                            Many Countries have typical cultures and beautiful natural landscapes are
+                                            offering many policies to attract tourists.
+                                            AMJ decided to invest in this sector by acquiring tourism real estate,
+                                            resorts, mountain + sea tourism chains to catch
+                                            the recovery wave.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="service-item">
+                                        <div class="service-item-title">
+                                            Fashion and beauty
+                                        </div>
+                                        <div class="service-item-content">
+                                            The economy is recovering rapidly, so people's lives and incomes are also
+                                            gradually improving. Since then, the need for
+                                            beauty has become more and more focused, the middle class and above are
+                                            willing to spend large sums of money to promote
+                                            or maintain their beauty, so almost the fashion and beauty industry will be
+                                            one of the industries. spearhead
+                                            development. AMJ has taken fashion and beauty industry into our investment
+                                            ecosystem to give customers more investment
+                                            choices as well as enjoy the highest level of services.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="service-item">
+                                        <div class="service-item-title">
+                                            Jewelry and gems
+                                        </div>
+                                        <div class="service-item-content">
+                                            Standing on the threshold of life and death makes people feel deeply the
+                                            spiritual and feng shui value of their personal
+                                            life and their relatives. That is multiplied many times when global citizens
+                                            are severely affected after the Covid 19
+                                            pandemic, deeply hurting the spiritual life of the community. The social
+                                            trend is that more and more people are looking
+                                            to spiritual symbols such as gemstones as a spiritual support, for peace,
+                                            for health. AMJ has cooperated with many gem
+                                            trading / processing units to create a solid business network, diversify
+                                            investment products.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="service-item">
+                                        <div class="service-item-title">
+                                            Real estate
+                                        </div>
+                                        <div class="service-item-content">
+                                            With many years of experience in the real estate and finance industry. AMJ
+                                            becomes one of the leading investment
+                                            companies in the field of Real Estate business according to the smart
+                                            investing model of blockchain application. As a
+                                            result, AMJ has had certain successes in the field of real estate investment
+                                            in Europe, Australia and now we are
+                                            replicating that success in other localities by spending tens billions of
+                                            dollars on Real estate investment projects in
+                                            the Asia Pacific region.
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls2" role="button"
+                                    data-slide="prev">
+                                    <div class="wrapper-icon">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </div>
+                                </a>
+                                <a class="carousel-control-next" href="#carouselExampleControls2" role="button"
+                                    data-slide="next">
+                                    <div class="wrapper-icon">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- vision -->
+    <div id="vision" class="vision">
+        <div class="vision-title second-title centering">
+            Vision
+        </div>
+        <div class="vision-desc centering text-center">
+            Building AMJ into a prestigious global brand,
+            <br>
+            becoming a historic milestone in the field of investment
+        </div>
+        <div class="vision-main-img">
+            <img src="./assets/images/vision.png" alt="">
+        </div>
+    </div>
+
+    <!-- mission -->
+    <div class="mission">
+        <div class="container">
+            <div class="primary-title centering mb-40">
+                <div class="primary-title-icon">
+                    <img src="./assets/images/arrow-left.png" alt="">
+                </div>
+                <div class="primary-title-text">
+                    Mission
+                </div>
+                <div class="primary-title-icon">
+                    <img src="./assets/images/arrow-right.png" alt="">
+                </div>
+            </div>
+
+            <div class="paragraph">
+                Build long-term cooperative relationships with Partners and Customers to Create Prosperity in a stable
+                and sustainable
+                way and help them achieve their financial goals.
+            </div>
+
+            <div class="paragraph">
+                Providing “Focused Investment” with comprehensive investment projects effectively to bring the greatest
+                value,
+                increasing prosperity not only for customers but also for all stakeholders.
+            </div>
+
+            <div class="machine-img">
+                <img src="./assets/images/shakehand.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- value -->
+    <div class="value">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="value-title centering">
+                        CORE VALUES
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="value-item">
+                        <div class="value-item-icon">
+                            <img src="./assets/images/value-1.png" alt="">
+                        </div>
+                        <div class="value-item-title">
+                            CREATIVE
+                        </div>
+                        <div class="value-item-desc">
+                            is survival
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="value-item">
+                        <div class="value-item-icon">
+                            <img src="./assets/images/value-2.png" alt="">
+                        </div>
+                        <div class="value-item-title">
+                            PRESTIGE
+                        </div>
+                        <div class="value-item-desc">
+                            as an asset
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="value-item">
+                        <div class="value-item-icon">
+                            <img src="./assets/images/value-3.png" alt="">
+                        </div>
+                        <div class="value-item-title">
+                            EFFICIENCY
+                        </div>
+                        <div class="value-item-desc">
+                            as a measure
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                    <div class="value-item">
+                        <div class="value-item-icon">
+                            <img src="./assets/images/value-4.png" alt="">
+                        </div>
+                        <div class="value-item-title">
+                            SERVICE
+                        </div>
+                        <div class="value-item-desc">
+                            is the mission
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="footer-content">
+                        <div class="footer-title ">
+                            AMJ
+                        </div>
+                        <div class="footer-desc">
+                            beside you to control the future.
+                        </div>
+                        <div class="footer-social">
+                            <a class="footer-social-item centering">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a class="footer-social-item centering">
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </a>
+                            <a class="footer-social-item centering">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a class="footer-social-item centering">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<script src="./assets/js/main.js"></script>
